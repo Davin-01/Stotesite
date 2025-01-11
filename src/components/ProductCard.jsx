@@ -1,22 +1,21 @@
-import React from "react";
-
-
 const ProductCard = ({ product }) => {
-    return (
-      <div className="bg-white border border-secondary rounded-lg p-4 shadow hover:shadow-lg transition-shadow duration-300">
-        <img
-          src={product.image}
-          alt={product.name}
-          className="w-full h-40 object-cover rounded-md"
-        />
-        <h3 className="text-xl font-bold text-primary mt-3">{product.name}</h3>
-        <p className="text-lg text-secondary">{product.price}</p>
+  return (
+    <div className="bg-white border border-secondary rounded-lg shadow-md p-4 hover:shadow-lg transition duration-300">
+      <img
+        src={product.image}
+        alt={product.name}
+        className="w-full h-48 object-cover rounded-md"
+      />
+      <div className="mt-4">
+        <h3 className="text-xl font-bold text-primary">{product.name}</h3>
+        <p className="text-textSecondary">{product.price}</p>
+        <p className="text-sm text-gray-500 mt-2">{product.description}</p>
         <button className="mt-4 bg-accent text-white px-4 py-2 rounded hover:bg-secondary transition duration-300">
-          Buy Now
+          Add to Cart
         </button>
       </div>
-    );
-  };
-  
-  export default ProductCard;
-  
+    </div>
+  );
+};
+
+export default ProductCard;
