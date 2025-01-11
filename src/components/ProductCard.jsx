@@ -1,3 +1,7 @@
+import React from "react";
+// import products from "../data/products";
+
+
 const ProductCard = ({ product }) => {
   return (
     <div className="bg-white border border-secondary rounded-lg shadow-md p-4 hover:shadow-lg transition duration-300">
